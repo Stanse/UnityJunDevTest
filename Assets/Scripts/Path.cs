@@ -7,12 +7,12 @@ public abstract class Path : MonoBehaviour
     [SerializeField] protected float speed;
     [SerializeField] protected GameObject movingObject;
 
-    public Vector2 getPointA()
+    public Vector2 GetPointA()
     {
         return pointA;
     }
 
-    public Vector2 getPointB()
+    public Vector2 GetPointB()
     {
         return pointB;
     }

@@ -1,14 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class SawPath : Path
 {
     Vector2 finishPoint;
     public List<Vector2> pathPoints;
-    public int nextPoint;
+    private int nextPoint;
     private int direction;
-    public int N;
+    private int N;
 
 
     // Start is called before the first frame update
@@ -76,12 +75,12 @@ public class SawPath : Path
 
     }
 
-    public void setN(int n)
+    public void SetN(int n)
     {
         N = n;
     }
 
-    public int getN()
+    public int GetN()
     {
         return N;
     }
