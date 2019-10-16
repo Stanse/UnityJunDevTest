@@ -41,7 +41,7 @@ public class PathSelector : MonoBehaviour
         UI.GetComponent<UI>().setSliderSpeed(1);
         UI.GetComponent<UI>().getTxtPathSetting().gameObject.SetActive(true);
         UI.GetComponent<UI>().getTxtPathSetting().tag = "Saw";
-        UI.GetComponent<UI>().setTxtPathSetting("N = " + trajectories[1].GetComponent<SawPath>().GetN().ToString());
+        UI.GetComponent<UI>().setTxtPathSetting("N = " + (trajectories[1].GetComponent<SawPath>().GetN()+1).ToString());
     }
 
     public void BtnSpiralWasPressed()
